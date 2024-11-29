@@ -4,8 +4,7 @@ import Card from "./components/Card/Card";
 import Links from "./components/Links/Links";
 
 export default function Home() {
-
-  const myName = "Paulo Gabriel"
+	const myName = "Paulo Gabriel";
 
 	return (
 		<div className="bg-primaryColor min-h-screen flex flex-col items-center text-white">
@@ -33,20 +32,43 @@ export default function Home() {
 						/>
 					</div>
 
-          <p className="text-2xl font-bold text-secondaryColor">Olá, eu sou {myName}</p>
-          <p>Estou entusiasmado para explorar novas oportunidades e contribuir para projetos desafiadores. Se você está buscando um desenvolvedor full stack dedicado e apaixonado, estou pronto para ajudar.
-          </p>
+					<p className="text-2xl font-bold text-secondaryColor">
+						Olá, eu sou {myName}
+					</p>
+					<p>
+						Estou entusiasmado para explorar novas oportunidades e contribuir
+						para projetos desafiadores. Se você está buscando um desenvolvedor
+						full stack dedicado e apaixonado, estou pronto para ajudar.
+					</p>
 
-          <Button textButton={"Fale Comigo"} />
+					<Button textButton={"Fale Comigo"} />
 				</section>
 
-        <section>
-          <Card />
-        </section>
-        <section>
-          <Links />
-        </section>
+				<section>
+					<Card />
+				</section>
+				<section>
+					<Links />
+				</section>
+				<section className="flex flex-col gap-8 my-8">
+					<p className="text-2xl font-bold text-secondaryColor">
+						Entre em Contato
+					</p>
+					<p>
+						Se você gostou do meu trabalho, entre em contato comigo. Estou
+						entusiasmado para explorar novas oportunidades e enfrentar projetos
+						desafiadores!
+					</p>
+
+					<Button textButton={"Fale Comigo"} />
+				</section>
 			</main>
+			<footer className="flex flex-col gap-6 bg-gray-950 w-full text-center py-10">
+				<p className="text-center text-sm text-secondaryColor">
+					Feito por {myName}
+				</p>
+				<p>Todos os direitos reservados - 2024</p>
+			</footer>
 		</div>
 	);
 }
